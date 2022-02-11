@@ -169,6 +169,7 @@ main{
 .technical-information{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -197,7 +198,7 @@ main{
 }
 
 .feature header{
-    height: 51px;
+    height: 52px;
     width: 100%;
     background-color: #1E657B;
     display: flex;
@@ -372,23 +373,84 @@ main{
 }
 
 
+
+@media screen and (max-width: 1277px){
+
+    .feature{
+        width: 310px;
+    }
+
+    .feature h3{
+        font-size: 21px;
+    }
+
+    .feature .content-feature ul .temporal-serie h4{
+        font-size: 16px;
+    }
+
+    .feature .content-feature ul .temporal-serie span{
+        font-size: 14px;
+    }
+
+    .feature .content-feature ul .temporal-serie i{
+        font-size: 14px;
+    }
+    .feature .content-feature ul .prophecy-item .nivel span{
+        width: 15%;
+    }
+
+    .feature header img{
+        height: 28px;
+        width: 28px;
+    }
+}
+
+
+@media screen and (max-width: 1220px){
+
+    .text-hero .complet-name{
+        font-size: 38px;
+    }
+
+    .program-imgs img{
+       transform: scale(0.75)
+    }
+
+    .text-hero{
+        align-items: center;
+    }
+
+    .text-hero :nth-child(3){
+
+    };
+}
+
 @media screen and (max-width: 1090px){
 
     .row-1, .row-2{
         height: max-content;
-  
         display: flex;
-        flex-direction: column;
         margin-bottom: 0;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .feature{
-
         height: 400px;
         margin-bottom: 40px;
+    }
 
+    .row-1 :nth-child(2), .row-2 :nth-child(2){
+        margin-left: 20px;
     }
 }
+
+@media screen and (max-width: 900px){
+
+
+}
+
+
 
 
 
