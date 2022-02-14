@@ -16,6 +16,10 @@ h3{
  
 }
 
+h4{
+    font-size: 17px;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -35,7 +39,7 @@ main{
 }
 
 .content-hero{
-    width: 86%;
+    width: 1140px;
     max-width: 1200px;
     height: 290px;
     background-color: #1E657B;
@@ -99,7 +103,7 @@ main{
 
 .content{
     display: flex;
-    width: 86%;
+    width: 1140px;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -111,8 +115,9 @@ main{
 
 .about-me{
     width: 100%;
-    height: 260px;
-    margin-bottom: 40px;
+    height: max-content;
+    padding-bottom: 50px;
+    
     
 }
 
@@ -132,6 +137,7 @@ main{
 .info-about-me i{
     font-size: 20px;
     color: #75B7CC;
+    vertical-align: middle;
 
 }
 
@@ -206,10 +212,7 @@ main{
     align-items: center;
 }
 
-.feature header img{
-    height: 35px;
-    width: 35px;
-}
+
 
 .feature header i{
     color: white;
@@ -274,9 +277,7 @@ main{
     border-radius: 50%;
 }
 
-.feature .content-feature ul .temporal-serie h4{
-    font-size: 17px;
-}
+
 
 
 .feature .content-feature ul .prophecy-item{
@@ -301,6 +302,10 @@ main{
     width: 25px;
     height: 25px;
     margin-right: 10px;
+}
+
+.details, i{
+    font-size: 16px
 }
 
 .feature .content-feature ul .prophecy-item .nivel{
@@ -376,17 +381,55 @@ main{
 
 @media screen and (max-width: 1277px){
 
+    .content-hero, .content{
+        width: 1050px;
+    }
     .feature{
         width: 310px;
     }
 
-    .feature h3{
-        font-size: 21px;
+    h3{
+        font-size: 22px;
     }
-
-    .feature .content-feature ul .temporal-serie h4{
+    h4{
         font-size: 16px;
     }
+
+    .details, i{
+        font-size: 15px
+    }
+    
+    
+    .text-hero .complet-name{
+        font-size:40px;
+    }
+    
+ 
+    
+    .text-hero{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .text-hero .office{
+        font-size: 21px;
+        position: relative;
+        top: -13px;
+    }
+    
+    
+    .feature .content-feature ul .prophecy-item .proficiency img{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+
+    .proficiency-language img{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+
 
     .feature .content-feature ul .temporal-serie span{
         font-size: 14px;
@@ -399,33 +442,62 @@ main{
         width: 15%;
     }
 
-    .feature header img{
-        height: 28px;
-        width: 28px;
-    }
 }
 
 
 @media screen and (max-width: 1220px){
 
-    .text-hero .complet-name{
-        font-size: 38px;
+    .content-hero, .content{
+        width: 1000px;
     }
-
+    .text-hero .complet-name{
+        font-size:38px;
+    }
+    
+ 
+    
+    .text-hero{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .text-hero .office{
+        font-size: 20px;
+        position: relative;
+        top: -13px;
+    }
+    
     .program-imgs img{
        transform: scale(0.75)
     }
 
-    .text-hero{
-        align-items: center;
-    }
+ 
 
-    .text-hero :nth-child(3){
-
-    };
 }
 
 @media screen and (max-width: 1090px){
+
+    .content-hero, .content{
+        width: 920px;
+    }
+
+    .text-hero .complet-name{
+        font-size:37px;
+        position: relative;
+        left: 15px;
+    }
+
+    
+    .text-hero .office{
+        font-size: 19px;
+        position: relative;
+        top: -13px;
+        left: 15px;
+    }
+    
+    .program-imgs img{
+       transform: scale(0.70)
+    }
 
     .row-1, .row-2{
         height: max-content;
@@ -440,16 +512,298 @@ main{
         margin-bottom: 40px;
     }
 
-    .row-1 :nth-child(2), .row-2 :nth-child(2){
+    .row-1 >:nth-child(2), .row-2 >:nth-child(2){
         margin-left: 20px;
+    }
+
+    .info-about-me{
+
+        font-size: 18px;
+    }
+    
+    .info-about-me i{
+        font-size: 18px;
+        color: #75B7CC;
+    
     }
 }
 
+
 @media screen and (max-width: 900px){
+    .content-hero, .content{
+        width: 800px;
+    }
+
+    .row-1, .row-2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .text-hero .complet-name{
+        font-size:35px;
+        position: relative;
+        left: 20px;
+    }
+
+    
+    .text-hero .office{
+        font-size: 18px;
+        position: relative;
+        top: -13px;
+        left: 20px;
+    }
+    
+    .program-imgs img{
+       transform: scale(0.65)
+    }
+}
+
+@media screen and (max-width: 800px){
+    .content-hero, .content{
+        width: 690px;
+    }
+
+    .text-hero{
+        top:0%;
+        left: -80px;
+    }
+    .text-hero .complet-name{
+        font-size:36px;
+        position: relative;
+        
+    }
+
+    
+    .text-hero .office{
+        font-size: 19px;
+        position: relative;
+        
+      
+        
+    }
+    
+    .program-imgs img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+    .row-1 > :nth-child(2), .row-2 > :nth-child(2){
+        margin-left: 0px;
+    }
+    .info-about-me{
+
+        font-size: 17px;
+    }
+    
+    .info-about-me i{
+        font-size: 17px;
+        color: #75B7CC;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    .content-hero, .content{
+        width: 580px;
+    }
+
+    .text-hero{
+
+        left: -50px;
+    }
+    .text-hero .complet-name{
+        font-size:36px;
+        
+    }
+    
+    .text-hero .office{
+        font-size: 19px;     
+    }
+}
+
+@media screen and (max-width: 600px){
+    .content-hero, .content{
+        width: 470px;
+    }
+
+    .text-hero{
+
+        left: -35px;
+    }
+    .text-hero .complet-name{
+        font-size:30px;
+        
+    }
+    
+    .text-hero .office{
+        font-size: 16px;     
+    }
+}
+
+@media screen and (max-width: 500px){
+    .content-hero, .content{
+        width: 360px;
+    }
+
+    .content{
+        margin-top: 90px;
+
+        
+    }
+
+    .text-hero{
+
+        left: -20px;
+    }
+    .text-hero .complet-name{
+        font-size:24px;  
+    }
+
+    .text-hero .complet-name:nth-child(1){
+        position: relative; 
+        top:-4px
+    }
+
+    .hero{
+        height: 220px;
+    }
+    .content-hero{
+        height: 220px;
+    }
+    .text-hero .office{
+        font-size: 14px;     
+    }
+
+
+    .feature hr{
+        margin:12px 0 22px 0
+    }
+    
+    .feature header{
+        height: 46px;
+        width: 100%;
+    }
+
+    
+    .about-me hr{
+        margin-bottom: 20px;
+    }
+
+    .about-me{
+
+        padding-bottom: 20px;
+        
+    }
+    
+    h2{
+
+        font-size: 24px;
+
+    }
+
+    h3{
+
+        font-size: 19px;
+
+    }
+    .h4{
+        font-size: 15px;
+    }
+    .details, i{
+        font-size: 14px
+    }
+
+
+
+
+    .proficiency-language img{
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+    }
+    .info-about-me{
+
+        font-size: 15px;
+    }
+    
+    .info-about-me i{
+        font-size: 15px;
+        color: #75B7CC;
+    
+    }
+
+    
+    .feature header i{
+   
+        font-size: 23px;
+    
+    }
+
 
 
 }
 
+
+
+
+@media screen and (max-width: 400px){
+
+    .content-hero, .content{
+        width: 320px;
+    }
+
+    
+    .info-about-me{
+
+        font-size: 15px;
+    }
+    
+    .info-about-me i{
+        font-size: 15px;
+
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    
+    .feature .content-feature ul .prophecy-item .proficiency img{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .proficiency-language img{
+        width: 18px;
+        height: 18px;
+   
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    .details, i{
+        font-size: 14px;
+    }
+
+    .info-about-me{
+
+        font-size: 14px;
+    }
+    
+    .info-about-me i{
+        font-size: 14px;
+        color: #75B7CC;
+    
+
+}
 
 
 
