@@ -180,7 +180,7 @@ main{
 }
 
 .row-1, .row-2{
-    height: 400px;
+    height: 380px;
     width: 100%;
     display: flex;
     justify-content: space-between;
