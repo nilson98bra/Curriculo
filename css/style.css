@@ -3,6 +3,8 @@ body{
     
 }
 
+
+
 h2{
     color: #000;
     font-size: 30px;
@@ -242,6 +244,26 @@ main{
 
 }
 
+ul{
+    scrollbar-width: thin;
+    scrollbar-color: #1E657B
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  ul::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ul::-webkit-scrollbar-track {
+  
+  }
+  
+  ul::-webkit-scrollbar-thumb {
+    background-color: #1E657B;
+    border-radius: 20px;
+    border: 3px solid #FAFAFA;
+  }
+
 
 
 
@@ -373,25 +395,106 @@ main{
 
 .portfolio-skills{
     width: 100%;
-    min-height: 50px;
+    padding: 7px 0;
     background-color: #1E657B;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
     
 }
 
 .project{
+    width: 250px;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project h4{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-description{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+
+.project-description{
+    scrollbar-width: thin;
+    scrollbar-color: #1E657B
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .project-description::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+
+  
+  .project-description::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 3px solid #1E657B;
+  }
+.project-description span{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.img-lol{
+    width: 100%;
+}
+
+.img-chat{
+    margin-bottom: 15px;
+    width: 95px;
+}
+
+.img-ss{
+    margin-bottom: 15px;
+    width: 95px;
+}
+
+.img-agenda{
+    margin-bottom: 15px;
+    width: 95px;
+}
+
+.img-ca{
+    margin-bottom: 15px;
+    width: 76px;
+}
+
+.img-curriculo{
+    margin-bottom: 15px;
+    width: 95px;
+}
+
+.img-trena{
+    margin-bottom: 15px;
+    object-fit: cover;
+    height: 150px;
     width: 150px;
-    height:150px;
-    background-color: red;
 }
 
 .project a{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: max-content
 }
 .hide-project{
     display: none;
@@ -401,23 +504,24 @@ main{
 @keyframes example {
     
     from {height: 0px;}
-    to {height: 200px;}
+    to {height: 350px;}
   }
 
 @keyframes example2 {
 
-from {height: 200px;}
+from {height: 350px;}
 to {height: 0px;}
 }
 .portfolio-projects{
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
+    padding-top: 10px;
     animation-name: example;
     animation-duration: 0.8s;
 }
+
 
 .portfolio-projects-remove{
     width: 100%;
@@ -426,7 +530,7 @@ to {height: 0px;}
 }
 
 .portfolio-projects-height{
-    height: 200px;
+    height: 350px;
 }
 
 
