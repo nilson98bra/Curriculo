@@ -1,11 +1,9 @@
-console.log("Hello")
-
-
 let el = [...document.getElementsByClassName("portfolio-skills")]
 el.forEach((element,index) => {
     element.addEventListener("click",(e)=>{
         let div=element.children[1]
         let projectlist = [...div.children]
+       
         if(e.target.classList.contains("project")==false){
             if(div.classList.contains("portfolio-projects")==false){
 
